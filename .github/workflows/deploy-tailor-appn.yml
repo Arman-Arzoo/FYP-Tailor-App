@@ -20,7 +20,7 @@ jobs:
         uses: linchpin/action-build-yarn-npm@master
 
       - name: creating build
-        run: yarn build
+        run: npm run build
         
       - name: Install Surge
         run: npm install -g surge
