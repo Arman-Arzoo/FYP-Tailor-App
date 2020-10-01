@@ -25,4 +25,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./build waggish-system.surge.sh --token ${{ secrets.SURGETOKEN }}
+        run: surge ./build tacit-ice.surge.sh --token ${{ secrets.SURGETOKEN }}
