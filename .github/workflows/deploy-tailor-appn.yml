@@ -16,9 +16,8 @@ jobs:
         with:
           node-version: 12
       - name: Prepare for Yarn Installation
-        uses: Borales/action-yarn@v2.1.0
-        with:
-          cmd: install  
+        run: curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
       - name: creating build
 
         run: yarn build
