@@ -1,0 +1,33 @@
+name: tailor app
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    
+  steps:
+    -uses: actions/checkout@v-2
+     
+    -name: setup node.js environment
+    -uses: actions/setup-node@v2beta
+      with:
+        version: 12
+    -name: github action for yarn
+    -uses: Borales/action-yarn@v2.1.0
+     with:
+     #yarn command
+     cmd: install
+     -name: creating build
+      run: yarn build
+      -name: installing surge
+       run: npm install -g surge
+       
+       -name: deploying on surge
+        run:surge ./build http://waggish-system.surge.sh/ --token ${{secrets.SURGETOKEN}}
+      
+     
+    
