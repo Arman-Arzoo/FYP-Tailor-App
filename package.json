@@ -1,0 +1,30 @@
+{
+  "name": "fyp-tailor-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailorApp.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon tailor-backend/tailorApp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arman-Arzoo/FYP-Tailor-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arman-Arzoo/FYP-Tailor-App/issues"
+  },
+  "homepage": "https://github.com/Arman-Arzoo/FYP-Tailor-App#readme"
+}
