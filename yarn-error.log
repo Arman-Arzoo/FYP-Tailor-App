@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\break\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js build
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\break\AppData\Local\Programs\Python\Python37\Scripts;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;F:\1.Softwares House install and unintall\1.1 Software engineering tools\intalled softwares\Matlab\runtime\win64;F:\1.Softwares House install and unintall\1.1 Software engineering tools\intalled softwares\Matlab\bin;F:\1.Softwares House install and unintall\1.1 Software engineering tools\intalled softwares\Matlab\polyspace\bin;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\squishcoco;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\break\AppData\Local\Microsoft\WindowsApps;C:\Users\break\AppData\Local\GitHubDesktop\bin;C:\Users\break\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\break\AppData\Local\atom\bin;C:\Users\break\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: F:\2.Workstation files and project directory\10.javascript\1.PROJECT\1.MernStack Project\1.Node\FYP-Tailor-App\package.json: Unexpected token } in JSON at position 461
+      at JSON.parse (<anonymous>)
+      at C:\Users\break\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\break\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\break\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "fyp-tailor-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "tailorApp.js",
+    "dependencies": {
+      "bcrypt": "^5.0.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongodb": "^3.6.2",
+      
+      "mongoose": "^5.10.8"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "watch": "nodemon tailor-backend/tailorApp",
+      
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Arman-Arzoo/FYP-Tailor-App.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Arman-Arzoo/FYP-Tailor-App/issues"
+    },
+    "homepage": "https://github.com/Arman-Arzoo/FYP-Tailor-App#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
