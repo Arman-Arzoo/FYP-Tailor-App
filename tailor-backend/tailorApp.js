@@ -12,10 +12,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 4000
 
-app.get("/", (req,res)=>{
-    res.send("hello world")
-
-})
+app.use('/users',require("./routes/userRoute"));
 
 
 app.listen(PORT,()=>{console.log("Server Started at http://localhost:4000")});
