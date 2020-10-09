@@ -22,7 +22,8 @@ app.listen(PORT,()=>{console.log("Server Started at http://localhost:4000")});
 const URI = process.env.URI || "mongodb://127.0.0.1:27017/tailorApp";
 mongoose.connect(URI,{
     useNewUrlParser:true,
-    useUnifiedTopology:true
+    useUnifiedTopology:true,
+    useCreateIndex:true,
 }
 ).then(
     () => { console.log("successful connected to mongodb")},
