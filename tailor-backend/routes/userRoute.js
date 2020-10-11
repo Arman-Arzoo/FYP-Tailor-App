@@ -144,7 +144,7 @@ router.post("/tokenIsValid",async(req,res)=>{
         if(!token){
             return res.json(false)
         }
-        let JWT_SECRET = "djfdjfkldjsfldjsflkjdfjdslfjdfj"
+        let JWT_SECRET = "djfdjfkldjsfldjsflkjdfjdslfjdfj"  
         const verified = jwt.verify(token,JWT_SECRET);
 
         if(!verified){
