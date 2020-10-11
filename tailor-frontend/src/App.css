@@ -40,14 +40,16 @@ a Link{
   
 }
 
-.headerLink a{
+.headerLink button{
   color: white;
-  text-decoration: none;
-  padding: 0.5rem;
+  background-color: blueviolet;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
 }
 
-.headerLink a:hover{
-  color: gold;
+.headerLink button:hover{
+  background-color: gold;
 }
 
 /* home decoration */
