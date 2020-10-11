@@ -105,8 +105,8 @@ router.post("/login",async(req,res)=>{
         token,
         user:{
             id:user._id,
-            displayName:user.displayName,
-            email:user.email
+            displayName:user.displayName
+           
         }
     });
 
@@ -141,6 +141,7 @@ router.post("/tokenIsValid",async(req,res)=>{
     try{
         const token = req.header("x-auth-token");
 
+
         if(!token){
             return res.json(false)
         }
@@ -164,6 +165,16 @@ router.post("/tokenIsValid",async(req,res)=>{
 
     }
 
+});
+
+
+router.get("/",auth,async(req,res)=>{
+
+    const user = await User.findById(req.user);
+    res.json({
+        displayName:user.displayName,
+        id:user._id
+    });
 });
 
 
