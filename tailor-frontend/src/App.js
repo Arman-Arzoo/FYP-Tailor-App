@@ -53,8 +53,9 @@ checkLoggedIn()
   return (
     <BrowserRouter>
       <UserContext.Provider value={{ userData, setUserData }}>
-        <div className="container">
+        
           <Header />
+          <div className="container">
           <Switch>
             <Route path="/" exact component={Home}></Route>
             <Route path="/login" exact component={LogIn}></Route>

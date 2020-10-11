@@ -46,11 +46,11 @@ const SignUp = () => {
 
   }
   return (
-    <div>
+    <div className="container-form">
       <h2>Create an Account</h2>
 
       {error && <ErrorNotice message={error}  clearError ={()=>{setError(undefined)}}/>}
-      <form onSubmit={submit} >
+      <form  className= "form"onSubmit={submit} >
 
         <div className="form-control">
           <label htmlFor="username-register">Email</label>
@@ -73,8 +73,8 @@ const SignUp = () => {
           <input type="text"  id="email-register" placeholder="Enter Display Name..." onChange={(e)=>setDisplayName(e.target.value)} />
         </div>
 
-
-        <button className="btn">Sign Up</button>
+        <input type="submit" value="Sign Up"  />
+       
 
       </form>
 

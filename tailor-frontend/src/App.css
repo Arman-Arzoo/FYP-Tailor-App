@@ -6,6 +6,11 @@ a Link{
   
 }
 
+/* main container */
+.container-form{
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 /* Header styling */
 .header{
@@ -74,6 +79,46 @@ a Link{
 
 }
 
+.form-container{
+  background-color: aqua;
+}
+
+.form label,
+.form input{
+  display: block;
+}
+.form input{
+  margin-bottom: 1rem;
+}
+
+.form label{
+  margin-bottom: 0.2rem;
+}
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"]{
+
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  border:1px solid #c2c2c2;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+
+
+}
+.form input:focus{
+  outline: none;
+  border: 1px solid  #50e4e9;
+  box-shadow: inset 0px 0px 5px rgba(38,142,228,0.5);
+}
+
+.form input[type="submit"]{
+  border: 1px solid yellow;
+  padding: 0.3rem 0.5rem;
+  background-color: green;
+  font-size: 1.1rem;
+}
 /* media querry */
 @media screen and (max-width: 465px){
   .headerLogo{
