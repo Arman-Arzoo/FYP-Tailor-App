@@ -6,7 +6,6 @@ dotenv.config();
 
 // set up server
 const app = express();
-
 app.use(express.json());
 app.use(cors());
 

@@ -2,7 +2,9 @@ const router = require('express').Router();
 const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const dotenv =require("dotenv")
+const dotenv =require("dotenv");
+const auth = require("../middleWare/auth");
+
 dotenv.config();
 
 
@@ -95,7 +97,7 @@ router.post("/login",async(req,res)=>{
         return res.status(400).json({msg:"invalid user credentials"});
     }
 
-    const JWT_SECRET = "djfdjfkldjsfldjsflkjdfjdslfjdfj"
+    let JWT_SECRET = "djfdjfkldjsfldjsflkjdfjdslfjdfj"
     
     const token = jwt.sign({id:user._id},JWT_SECRET);
 
@@ -106,14 +108,63 @@ router.post("/login",async(req,res)=>{
             displayName:user.displayName,
             email:user.email
         }
-    })
+    });
 
 }catch(err){
     res.status(500).json({error:err.message})
 
 }
 
-})
+});
+
+
+// Delete account router
+
+router.delete("/deleteIt",auth,async(req,res)=>{
+
+    try{
+        const deleteUser = await User.findByIdAndDelete(req.user);
+
+        res.json(deleteUser)
+
+
+    } catch(err){
+        res.status(500).json({error:err.message})
+
+    }
+
+});
+
+
+router.post("/tokenIsValid",async(req,res)=>{
+
+    try{
+        const token = req.header("x-auth-token");
+
+        if(!token){
+            return res.json(false)
+        }
+        let JWT_SECRET = "djfdjfkldjsfldjsflkjdfjdslfjdfj"
+        const verified = jwt.verify(token,JWT_SECRET);
+
+        if(!verified){
+            return res.json(false)
+        }
+    
+        const user = await User.findById(verified.id)
+        if(!user){
+            return res.json(false)
+        }
+        else{
+            return res.json(true)
+        }
+
+
+    }catch(err){
+
+    }
+
+});
 
 
 module.exports = router
