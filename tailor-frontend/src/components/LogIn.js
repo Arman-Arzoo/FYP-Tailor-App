@@ -40,7 +40,10 @@ const LogIn = () => {
 
 
   return (
-    <div className="container-form">
+       
+    <div >
+      <h1 className="text-center">Welcome to Our Site</h1>
+     <div className="container-form">
       <h2>Log In</h2>
       {error && <ErrorNotice message={error} clearError={() => { setError(undefined) }} />}
       
@@ -63,6 +66,7 @@ const LogIn = () => {
        
 
       </form>
+    </div>
     </div>
   )
 }
