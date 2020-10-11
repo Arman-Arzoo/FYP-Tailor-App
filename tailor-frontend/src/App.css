@@ -66,10 +66,13 @@ a Link{
 .headerLink button:hover{
   background-color: gold;
 }
+/* footer */
 
 /* home decoration */
 
 /* form  */
+
+
 
 .error-notice{
   margin:1rem o;
@@ -80,9 +83,10 @@ a Link{
   display:flex;
   justify-content: space-between;
 }
+
 .error-notice button{
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   color: aliceblue;
   background-color: red;

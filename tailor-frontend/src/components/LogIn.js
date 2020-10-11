@@ -40,33 +40,33 @@ const LogIn = () => {
 
 
   return (
-       
+
     <div >
       <h1 className="text-center">Welcome to Our Site</h1>
-     <div className="container-form">
-      <h2>Log In</h2>
-      {error && <ErrorNotice message={error} clearError={() => { setError(undefined) }} />}
-      
-      <form className='form' onSubmit={submit}>
+      <div className="container-form">
+        <h2>Log In</h2>
+        {error && <ErrorNotice message={error} clearError={() => { setError(undefined) }} />}
 
-       <div className="form-control">
-          <label htmlFor="name">UserName</label>
-          <input type="text" id="username-login" placeholder="Enter User name or Email..." onChange={(e) => setEmail(e.target.value)} />
-        </div>
+        <form className='form' onSubmit={submit}>
 
-
-        <div className="form-control">
-          <label htmlfor="password">Password</label>
-          <input type="password" id="password-login" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
-        </div>
+          <div className="form-control">
+            <label htmlFor="name">UserName</label>
+            <input type="text" id="username-login" placeholder="Enter User name or Email..." onChange={(e) => setEmail(e.target.value)} />
+          </div>
 
 
+          <div className="form-control">
+            <label htmlfor="password">Password</label>
+            <input type="password" id="password-login" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
+          </div>
 
-        <input type="submit" value="Login"  />
-       
 
-      </form>
-    </div>
+
+          <input type="submit" value="Login" />
+
+
+        </form>
+      </div>
     </div>
   )
 }

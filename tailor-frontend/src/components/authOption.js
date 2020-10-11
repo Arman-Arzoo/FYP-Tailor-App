@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import UserContext from '../context/userContext'
 
 
@@ -7,14 +7,14 @@ import UserContext from '../context/userContext'
 
 const AuthOption = () => {
     let history = useHistory();
-    const {userData, setUserData} = useContext(UserContext);
+    const { userData, setUserData } = useContext(UserContext);
 
-    const register = ()=> history.push("/signup");
-    const login = ()=> history.push("/login");
-    const logOut = ()=>{
+    const register = () => history.push("/signup");
+    const login = () => history.push("/login");
+    const logOut = () => {
         setUserData({
             token: undefined,
-            user:undefined
+            user: undefined
         });
         localStorage.setItem("auth-token", "")
     };
@@ -23,20 +23,20 @@ const AuthOption = () => {
 
         <div className="headerLink" >
             {
-                userData.user ?(
+                userData.user ? (
                     <button onClick={logOut}> Log Out</button>
 
-                ):
-                (
-                    <>
-                    <button onClick={login}> Log In</button>
-                    <button onClick={register}> Sign UP</button>
-                    </>
-                )
+                ) :
+                    (
+                        <>
+                            <button onClick={login}> Log In</button>
+                            <button onClick={register}> Sign UP</button>
+                        </>
+                    )
 
             }
-            
-            
+
+
         </div>
     )
 
