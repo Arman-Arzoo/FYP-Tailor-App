@@ -9,6 +9,7 @@ import UserContext from './context/userContext';
 import { useState, useEffect } from 'react';
 import Axios from 'axios';
 import Footer from './components/footer';
+import Profile from './components/profile';
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
             <Route path="/" exact component={Home}></Route>
             <Route path="/login" exact component={LogIn}></Route>
             <Route path="/signup" exact component={SignUp}></Route>
+            <Route path="/profile" component={Profile}></Route>
           </Switch>
         </div>
          <Footer/>
