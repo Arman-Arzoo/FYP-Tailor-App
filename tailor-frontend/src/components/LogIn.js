@@ -27,7 +27,7 @@ const LogIn = () => {
       });
 
       localStorage.setItem("auth-token", loginRes.data.token);
-      history.push("/profile")
+      history.push("/profile");
 
     }
     catch (err) {
@@ -52,7 +52,7 @@ const LogIn = () => {
           </div>
 
           <div className="form-control">
-            <label htmlfor="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input type="password" id="password-login" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
           </div>
 

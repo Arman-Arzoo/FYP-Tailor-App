@@ -1,21 +1,17 @@
-import React from 'react';
-// import { useState, useContext } from 'react';
-// import UserContext from '../context/userContext';
-// import AuthOption from './authOption'
-// import {  Link } from "react-router-dom"
-
+import React, { useContext, useEffect, useState} from 'react';
+import Axios from "axios";
+import UserContext from '../context/userContext';
 
 const Profile = () => {
-
-    
-
     return (
-        
-            <div>
-               <h1>Welcome to {}</h1>
+    
+       <div> 
 
-            </div>
-        
+            welcome to user  
+
+       </div>
+           
+       
     )
 
 }

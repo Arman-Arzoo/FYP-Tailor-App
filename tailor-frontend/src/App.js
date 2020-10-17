@@ -40,17 +40,17 @@ function App() {
 
         });
       }
-
+     
 
     };
     checkLoggedIn()
-
+    
 
   }, []);
 
 
 
-
+  
 
   return (
     <BrowserRouter>
@@ -60,8 +60,8 @@ function App() {
         <div className="container">
           <Switch>
             <Route path="/" exact component={Home}></Route>
-            <Route path="/login" exact component={LogIn}></Route>
-            <Route path="/signup" exact component={SignUp}></Route>
+            <Route path="/login"  component={LogIn}></Route>
+            <Route path="/signup"  component={SignUp}></Route>
             <Route path="/profile" component={Profile}></Route>
           </Switch>
         </div>

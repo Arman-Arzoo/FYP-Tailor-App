@@ -61,17 +61,17 @@ const SignUp = () => {
 
 
           <div className="form-control">
-            <label htmlfor="password-register">Password</label>
+            <label htmlFor="password-register">Password</label>
             <input type="password" id="password-register" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
             <br />
-            <label htmlfor="password-register">RePassword</label>
+            <label htmlFor="password-register">RePassword</label>
             <input type="password" id="password-check" placeholder="verify password..." onChange={(e) => setPasswordCheck(e.target.value)} />
           </div>
 
 
 
           <div className="form-control">
-            <label htmlfor="displayName-register">Display Name</label>
+            <label htmlFor="displayName-register">Display Name</label>
             <input type="text" id="email-register" placeholder="Enter Display Name..." onChange={(e) => setDisplayName(e.target.value)} />
           </div>
 

@@ -3,6 +3,7 @@ const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const dotenv =require("dotenv");
+const validator = require("validator")
 const auth = require("../middleWare/auth");
 
 dotenv.config();
@@ -15,12 +16,18 @@ router.post("/register", async (req, res) => {
     
 
     let { email, password, passwordCheck, displayName } = req.body;
+  
 
-    if (!email || !password || !passwordCheck) {
+
+    if (!email ||!password || !passwordCheck) {
 
         return res.status(400).json({msg:"not all feild have been entered"});
 
     }
+
+    // if(!validator.email){
+    //     return res.status(400).json({msg:"Enter a valid Email "});
+    // }
 
     if(password.length < 5){
 
