@@ -11,7 +11,7 @@ const Profile = () => {
 
     return (
         
-            <div >
+            <div>
                <h1>Welcome to {}</h1>
 
             </div>

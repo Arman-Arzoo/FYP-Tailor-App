@@ -5,8 +5,6 @@ import Axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import ErrorNotice from './misc/errorNotices';
 
-
-
 const LogIn = () => {
 
   const [email, setEmail] = useState();
@@ -23,18 +21,17 @@ const LogIn = () => {
       const logInUser = { email, password };
       const loginRes = await Axios.post("http://localhost:4000/users/login", logInUser);
 
-
       setUserData({
         token: loginRes.data.token,
         user: loginRes.data.user
       });
+
       localStorage.setItem("auth-token", loginRes.data.token);
       history.push("/profile")
 
     }
     catch (err) {
       err.response.data.msg && setError(err.response.data.msg);
-
     }
   }
 
@@ -54,17 +51,13 @@ const LogIn = () => {
             <input type="text" id="username-login" placeholder="Enter User name or Email..." onChange={(e) => setEmail(e.target.value)} />
           </div>
 
-
           <div className="form-control">
             <label htmlfor="password">Password</label>
             <input type="password" id="password-login" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
           </div>
 
-
-
           <input type="submit" value="Login" />
-
-
+          
         </form>
       </div>
     </div>
