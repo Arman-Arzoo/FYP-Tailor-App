@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import UserContext from '../context/userContext'
 
 
@@ -19,12 +19,18 @@ const AuthOption = () => {
         localStorage.setItem("auth-token", "")
     };
 
+   
+
     return (
 
         <div className="headerLink" >
             {
                 userData.user ? (
+                    <>
+                    <Link to="/profile" className="hhh">{userData.user.displayName}</Link>
                     <button onClick={logOut}> Log Out</button>
+                    
+                    </>
 
                 ) :
                     (

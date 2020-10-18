@@ -1,19 +1,26 @@
-import React, { useContext, useEffect, useState} from 'react';
-import Axios from "axios";
+import React, { useContext } from 'react'
+import { useHistory } from 'react-router-dom';
 import UserContext from '../context/userContext';
 
-const Profile = () => {
-    return (
+
+const Profile = ()=>{
+ 
+    const { userData } = useContext(UserContext);
+   
+    const history = useHistory();
+
+ 
+ 
     
-       <div> 
+    const name = ((userData || {}).user|| {}).displayName;
 
-            welcome to user  
+    return(
 
-       </div>
-           
-       
+        <div>
+        hello = {name}
+   
+        </div>
     )
-
 }
 
-export default Profile;
+export default Profile

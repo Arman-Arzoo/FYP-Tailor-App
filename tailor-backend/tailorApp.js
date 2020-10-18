@@ -11,9 +11,6 @@ app.use(cors());
 
 const PORT = process.env.PORT || 4000
 
-app.use('/users',require("./routes/userRoute"));
-
-
 app.listen(PORT,()=>{console.log("Server Started at http://localhost:4000")});
 
 // set up mongoose
@@ -28,6 +25,10 @@ mongoose.connect(URI,{
     () => { console.log("successful connected to mongodb")},
     err => { err }
   );
+
+  // set up routes
+
+  app.use('/users',require("./routes/userRoute"));
 
 
 

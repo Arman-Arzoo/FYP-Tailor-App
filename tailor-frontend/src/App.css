@@ -1,4 +1,6 @@
 
+
+
 /* default */
 
 a Link{
@@ -8,6 +10,10 @@ a Link{
 
 .text-center{
   text-align: center;
+}
+
+body{
+  background-color: turquoise;
 }
 
 /* main container */
@@ -45,7 +51,7 @@ a Link{
 }
 
 .headerLogo a:hover{
-  color:gold;
+  color:turquoise;
 }
 
 .headerLink{
@@ -57,14 +63,24 @@ a Link{
 
 .headerLink button{
   color: white;
-  background-color: blueviolet;
+  background-color:teal;
   padding: 0.3rem;
   border-radius: 0.3rem;
   margin: 0.5rem;
 }
+.headerLink .hhh{
+  color: white;
+  display: inline;
+  text-decoration: none;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+}
+
 
 .headerLink button:hover{
-  background-color: gold;
+  background-color: turquoise;
 }
 /* footer */
 
