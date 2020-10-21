@@ -40,32 +40,36 @@ function App() {
 
         });
       }
-     
+
 
     };
     checkLoggedIn()
-    
+
 
   }, []);
 
 
 
-  
+
 
   return (
     <BrowserRouter>
       <UserContext.Provider value={{ userData, setUserData }}>
 
-        <Header />
-        <div className="container">
+
+        <div className="grid-container">
+          <Header />
           <Switch>
+            <main className="main">
             <Route path="/" exact component={Home}></Route>
-            <Route path="/login"  component={LogIn}></Route>
-            <Route path="/signup"  component={SignUp}></Route>
+            <Route path="/login" component={LogIn}></Route>
+            <Route path="/signup" component={SignUp}></Route>
             <Route path="/profile" component={Profile}></Route>
+            </main>
           </Switch>
+          <Footer />
         </div>
-         <Footer/>
+       
       </UserContext.Provider>
     </BrowserRouter>
   );

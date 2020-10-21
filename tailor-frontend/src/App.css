@@ -16,7 +16,30 @@ body{
   background-color: turquoise;
 }
 
+#root{
+  height: 100%;
+}
+
 /* main container */
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+
+}
+
+.main{
+  grid-area: main;
+
+}
+
+
+
 .container-form{
   margin-bottom: 45px;
   padding-top: 3rem;
@@ -30,6 +53,7 @@ body{
 
 /* Header styling */
 .header{
+  grid-area: header;
   background-color:black;
   display: flex;
   justify-content: space-between;
@@ -83,6 +107,15 @@ body{
   background-color: turquoise;
 }
 /* footer */
+
+.footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* home decoration */
 

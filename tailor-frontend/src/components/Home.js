@@ -4,8 +4,8 @@ import React from 'react';
 
 const Home = ()=>{
     return(
-        <div className="box">
-           Home
+        <div className="">
+           jdsklfjdsklfjlkdsjflkdsflkfjds
         </div>
     )
 }
