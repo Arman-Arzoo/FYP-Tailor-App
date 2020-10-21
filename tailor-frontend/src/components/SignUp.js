@@ -47,24 +47,24 @@ const SignUp = () => {
   }
   return (
     <div >
-      <h2 className="text-center">Register An Account</h2>
+         <br/>
       <div className="container-form form-group">
-        <h2>Create an Account</h2>
+        <h2 className="text-center">💻  Create an Account</h2>
 
         {error && <ErrorNotice message={error} clearError={() => { setError(undefined) }} />}
         <form className="form" onSubmit={submit} >
 
           <div className="">
-            <label htmlFor="username-register">Email</label>
+            <label htmlFor="username-register">📧  Email</label>
             <input type="email" id="username-register" placeholder="Enter Name..." onChange={(e) => setEmail(e.target.value)} />
           </div>
 
 
           <div className="">
-            <label htmlFor="password-register">Password</label>
+            <label htmlFor="password-register">🔑  Password</label>
             <input type="password" id="password-register" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
             <br />
-            <label htmlFor="password-register">RePassword</label>
+            <label htmlFor="password-register">🔑  RePassword</label>
             <input type="password" id="password-check" placeholder="verify password..." onChange={(e) => setPasswordCheck(e.target.value)} />
           </div>
 
@@ -83,6 +83,7 @@ const SignUp = () => {
 
 
       </div>
+      <br/>
     </div>
   )
 }

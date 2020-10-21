@@ -6,9 +6,9 @@ const Footer = () => {
 
     return (
 
-        <div className="footer">
+        <div className="footer ">
             <div className="footer-link" >
-                <h3>All right reserved created by Balti</h3>
+                <h4 className="text-center">All right reserved created by Balti</h4>
                 {/* < Link to='/'>Tailor App</Link> */}
             </div>
 

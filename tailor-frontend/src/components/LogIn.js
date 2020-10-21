@@ -2,7 +2,7 @@ import React from 'react';
 import UserContext from '../context/userContext';
 import { useState, useContext } from 'react';
 import Axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import ErrorNotice from './misc/errorNotices';
 
 const LogIn = () => {
@@ -39,28 +39,33 @@ const LogIn = () => {
   return (
 
     <div >
-      <h1 className="text-center">Welcome to Our Site</h1>
+      <br/>
+      
       <div className="container-form ">
-        <h2>Log In</h2>
+        <h2 className="text-center">  😻  LOG IN</h2>
         {error && <ErrorNotice message={error} clearError={() => { setError(undefined) }} />}
 
         <form className='form' onSubmit={submit}>
 
           <div className="">
-            <label htmlFor="name">UserName</label>
+            <label htmlFor="name">📧  Email</label>
             <input  type="text" id="username-login" placeholder="Enter User name or Email..." onChange={(e) => setEmail(e.target.value)} />
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">🔑  Password</label>
             <input type="password" id="password-login" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
           </div>
-
+          <div className="Already-account" >
+          <Link to="/signup">Already have an account</Link>
+          </div>
           <input type="submit" value="Login" />
           
         </form>
       </div>
+      <br/>
     </div>
+    
   )
 }
 
