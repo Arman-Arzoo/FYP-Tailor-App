@@ -40,18 +40,18 @@ const LogIn = () => {
 
     <div >
       <h1 className="text-center">Welcome to Our Site</h1>
-      <div className="container-form">
+      <div className="container-form ">
         <h2>Log In</h2>
         {error && <ErrorNotice message={error} clearError={() => { setError(undefined) }} />}
 
         <form className='form' onSubmit={submit}>
 
-          <div className="form-control">
+          <div className="">
             <label htmlFor="name">UserName</label>
-            <input type="text" id="username-login" placeholder="Enter User name or Email..." onChange={(e) => setEmail(e.target.value)} />
+            <input  type="text" id="username-login" placeholder="Enter User name or Email..." onChange={(e) => setEmail(e.target.value)} />
           </div>
 
-          <div className="form-control">
+          <div className="form-group">
             <label htmlFor="password">Password</label>
             <input type="password" id="password-login" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
           </div>

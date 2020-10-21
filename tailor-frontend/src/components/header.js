@@ -6,7 +6,7 @@ import {  Link } from "react-router-dom"
 const Header = () => {
 
     return (
-        
+            
             <div className="header">
                 <div className="headerLogo" >
                     < Link to='/'>Tailor App</Link>
@@ -15,7 +15,7 @@ const Header = () => {
 
 
             </div>
-        
+           
     )
 
 }

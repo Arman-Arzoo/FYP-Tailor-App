@@ -57,7 +57,7 @@ function App() {
       <UserContext.Provider value={{ userData, setUserData }}>
 
 
-        <div className="grid-container">
+        <div className=" jumbotron-fluid">
           <Header />
           <Switch>
             <main className="main">
