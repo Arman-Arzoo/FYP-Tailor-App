@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import './home.css';
 import Header from './components/header';
 import Home from './components/Home';
 import LogIn from './components/LogIn';
@@ -59,6 +60,7 @@ function App() {
 
         <div className=" jumbotron-fluid">
           <Header />
+          
           <Switch>
             <main className="main">
             <Route path="/" exact component={Home}></Route>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import { Link } from "react-router-dom"
 
 
@@ -6,13 +7,15 @@ const Footer = () => {
 
     return (
 
-        <div className="footer ">
-            <div className="footer-link" >
-                <h4 className="text-center">All right reserved created by Balti</h4>
-                {/* < Link to='/'>Tailor App</Link> */}
-            </div>
-
-        </div>
+        <footer>
+            <section class="ft-legal">
+                <ul class="ft-legal-list">
+                    <li><Link to="#">Terms &amp; Conditions</Link></li>
+                    <li><Link to="#">Privacy Policy</Link></li>
+                    <li>&copy; 2020 Copyright Tailor App.</li>
+                </ul>
+            </section>
+        </footer>
 
     )
 

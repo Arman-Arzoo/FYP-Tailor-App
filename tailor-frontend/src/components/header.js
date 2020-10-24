@@ -13,8 +13,9 @@ const Header = () => {
                 </div>
                 <AuthOption/>
 
-
+                    
             </div>
+            
            
     )
 

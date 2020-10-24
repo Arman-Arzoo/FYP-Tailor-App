@@ -52,7 +52,7 @@ const LogIn = () => {
             <input  type="text" id="username-login" placeholder="Enter User name or Email..." onChange={(e) => setEmail(e.target.value)} />
           </div>
 
-          <div className="form-group">
+          <div className="">
             <label htmlFor="password">🔑  Password</label>
             <input type="password" id="password-login" placeholder="Enter Password..." onChange={(e) => setPassword(e.target.value)} />
           </div>

@@ -12,17 +12,17 @@ const Profile = () => {
 
     return (
 
-        <div className="jumbotron my-3 p-3 bg-dark text-white">
-            <div class="row">
-                <div class="col-sm-4">
+        <div className="">
+            <div >
+                <div >
                     <div className="text-center">
-                        <img class="rounded-circle " src="arman.png" alt="img" width="250" height="250"></img>
+                        <img  src="arman.png" alt="img" width="250" height="250"></img>
                         <h1>{name}</h1>
                     </div>
 
                 </div>
-                <div class="col-sm-8">
-                    <table class="table table-dark table-hover">
+                <div >
+                    <table >
                         <thead>
                             <tr>
                                 <th>User</th>
