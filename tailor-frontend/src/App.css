@@ -369,6 +369,9 @@ ul {
   color: #004D40;
 }
 
+
+
+
 .main_container .container .item{
   background: #fff;
   border: 1px solid #E0F2F1;
@@ -387,22 +390,9 @@ ul {
 }
 
 /* after adding active class */
-.wrapper.active .sidebar{
-  width: 80px;
-}
-
-.wrapper.active .sidebar ul li a span.title,
-.wrapper.active .profile_info
-{
-  display: none;
-}
-
-.wrapper.active .main_container .container{
-  width: calc(100% - 80px);
-  margin-left: 80px;
-}
 
 
+/*  */
 
 
 /* setting profile style End*/

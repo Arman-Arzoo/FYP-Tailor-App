@@ -8,7 +8,7 @@ const Setting = () => {
 
     return (
         <div>
-           
+           <h1>home</h1>
 
           
 

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, Route, useHistory } from 'react-router-dom';
 import UserContext from '../context/userContext';
 import Setting from './setting';
@@ -9,9 +9,22 @@ import UserUpdate from './settingProfile/userUpdate';
 
 const Profile = () => {
 
-    const { userData } = useContext(UserContext);
+  
+
+ 
+    const { userData ,setUserData} = useContext(UserContext);
     const history = useHistory();
     const name = ((userData || {}).user || {}).displayName;
+
+
+    const logOut = () => {
+        setUserData({
+            token: undefined,
+            user: undefined
+        });
+        localStorage.setItem("auth-token", "")
+        history.push("/")
+    };
 
     return (
 
@@ -30,13 +43,13 @@ const Profile = () => {
             </div>
             <ul>
               <li>
-                <Link to="/profile/dashboard" className="active">
-                  <span class="icon"><i class="fas fa-dice-d6"></i></span>
-                  <span class="title">Dashboard</span>
+                <Link to="/profile/dashboard" className="active" >
+                  <span className="icon"><i class="fas fa-dice-d6"></i></span>
+                  <span className="title">Dashboard</span>
                 </Link>
               </li>
               <li>
-                <Link to="/profile/forms">
+                <Link to="/profile/forms" >
                   <span className="icon"><i class="fab fa-delicious"></i></span>
                   <span className="title">Forms</span>
                 </Link>
@@ -50,22 +63,38 @@ const Profile = () => {
               <li>
                 <Link href="#">
                   <span className="icon"><i class="fas fa-chart-pie"></i></span>
-                  <span className="title">Charts</span>
+                  <span className="title">Update Profile</span>
                 </Link>
               </li>
-              <li>
-                <Link href="#">
-                  <span className="icon"><i class="fas fa-border-all"></i></span>
-                  <span className="title">Tables</span>
-                </Link>
-              </li>
+              {
+                  userData.user?(
+                      <>
+                       <li>
+                  
+                  <Link onClick={logOut}>
+                    <span className="icon"><i class="fas fa-border-all"></i></span>
+                    <span className="title">Log Out</span>
+                  </Link>
+                </li>
+
+                      </>
+                  ):
+                  (
+                      <>
+                      </>
+                  )
+
+                  }
+             
+                
             </ul>
           </div>
       </div>
       <div className="container">
           <div className="item">
-          <Route path="/profile/dashboard" component={UserUpdate}></Route>
-          <Route path="/profile/forms" component={UserUpdates}></Route>
+          <Route   exact path="/profile" component={Setting}></Route>
+          <Route   path="/profile/dashboard" component={UserUpdate}></Route>
+          <Route   path="/profile/forms" component={UserUpdates}></Route>
           </div>
       
         

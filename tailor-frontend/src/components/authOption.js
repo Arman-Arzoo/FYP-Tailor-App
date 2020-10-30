@@ -5,19 +5,11 @@ import UserContext from '../context/userContext'
 
 const AuthOption = () => {
     let history = useHistory();
-    const { userData, setUserData } = useContext(UserContext);
+    const { userData} = useContext(UserContext);
 
     const register = () => history.push("/signup");
     const login = () => history.push("/login");
-    const logOut = () => {
-        setUserData({
-            token: undefined,
-            user: undefined
-        });
-        localStorage.setItem("auth-token", "")
-        history.push("/")
-    };
-
+ 
    
 
     return (
@@ -27,8 +19,8 @@ const AuthOption = () => {
                 userData.user ? (
                     <>
                     <Link to="/profile" className="hhh">{userData.user.displayName}</Link>
-                    <Link to="/update" >Setting</Link>
-                    <button onClick={logOut}> Log Out</button>
+               
+                  
                     
                     </>
 
