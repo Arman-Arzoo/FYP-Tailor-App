@@ -38,10 +38,8 @@ const LogIn = () => {
 
   return (
 
-    <div>
-      <br/>
-      <br/>
-      <br/>
+    <div className="login">
+      
       
       <div className="container-form ">
         <h2 className="text-center">  😻  LOG IN</h2>

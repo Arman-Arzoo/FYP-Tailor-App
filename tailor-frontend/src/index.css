@@ -9,7 +9,11 @@ body {
 #root{
   height: 100%;
 }
-
+body {
+  height: 100vh;
+  padding: 0;
+  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

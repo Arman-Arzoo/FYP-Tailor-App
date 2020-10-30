@@ -11,6 +11,7 @@ import { useState, useEffect } from 'react';
 import Axios from 'axios';
 import Footer from './components/footer';
 import Profile from './components/profile';
+import Setting from './components/setting';
 
 
 function App() {
@@ -58,7 +59,7 @@ function App() {
       <UserContext.Provider value={{ userData, setUserData }}>
 
 
-        <div className=" jumbotron-fluid">
+        <div id="full" className=" jumbotron-fluid fullSize">
           <Header />
           
           <Switch>
@@ -67,6 +68,7 @@ function App() {
             <Route path="/login" component={LogIn}></Route>
             <Route path="/signup" component={SignUp}></Route>
             <Route path="/profile" component={Profile}></Route>
+            <Route path="/update" component={Setting}></Route>
             </main>
           </Switch>
           <Footer />

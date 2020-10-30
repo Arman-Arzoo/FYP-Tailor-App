@@ -46,7 +46,7 @@ const SignUp = () => {
 
   }
   return (
-    <div >
+    <div className="signUp" >
          <br/>
       <div className="container-form form-group">
         <h2 className="text-center">💻  Create an Account</h2>

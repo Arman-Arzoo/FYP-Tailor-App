@@ -27,6 +27,7 @@ const AuthOption = () => {
                 userData.user ? (
                     <>
                     <Link to="/profile" className="hhh">{userData.user.displayName}</Link>
+                    <Link to="/update" >Setting</Link>
                     <button onClick={logOut}> Log Out</button>
                     
                     </>
