@@ -38,7 +38,9 @@ const LogIn = () => {
 
   return (
 
-    <div >
+    <div>
+      <br/>
+      <br/>
       <br/>
       
       <div className="container-form ">
@@ -64,6 +66,16 @@ const LogIn = () => {
         </form>
       </div>
       <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      
+      
     </div>
     
   )

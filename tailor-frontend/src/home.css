@@ -126,6 +126,10 @@ body {
       
   }
 
+  
+
+
+
   /* why choose tailor app */
 
   .home-part-c{
@@ -149,20 +153,27 @@ body {
     width: 100%;
     flex-grow: 4;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
     font-size: 16px;
   }
 
+  .choose div img{
+    height: 300px;
+    max-height: 100%;
+    max-width: 100%;
+    
+  }
 
 /* our team */
 
 .our-team{
-    background-color: gray;
+    background-color:gray;
     padding-top: 1.5rem;
 
 }
 
 .our-team h3{
+   
     font-weight: bold;
 }
 
@@ -170,7 +181,7 @@ body {
      
     display: flex;
     padding-top: 2rem;
-    height: 400px;
+    height: 100%;
     flex-direction: row;
 }
 
