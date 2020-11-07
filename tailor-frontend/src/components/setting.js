@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, Route } from "react-router-dom";
-import UserUpdates from "./settingProfile/testing";
+import UserUpdates from "./settingProfile/userUpdates";
 import UserUpdate from "./settingProfile/userUpdate";
 
 

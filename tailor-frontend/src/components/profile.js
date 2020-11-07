@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Link, Route, useHistory } from 'react-router-dom';
 import UserContext from '../context/userContext';
 import Setting from './setting';
-import UserUpdates from './settingProfile/testing';
+import UserUpdates from './settingProfile/userUpdates';
 import UserUpdate from './settingProfile/userUpdate';
 
 
@@ -61,7 +61,7 @@ const Profile = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link to="/profile/userUpdates">
                   <span className="icon"><i class="fas fa-chart-pie"></i></span>
                   <span className="title">Update Profile</span>
                 </Link>
@@ -94,7 +94,7 @@ const Profile = () => {
           <div className="item">
           <Route   exact path="/profile" component={Setting}></Route>
           <Route   path="/profile/dashboard" component={UserUpdate}></Route>
-          <Route   path="/profile/forms" component={UserUpdates}></Route>
+          <Route   path="/profile/userUpdates" component={UserUpdates}></Route>
           </div>
       
         

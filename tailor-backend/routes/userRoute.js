@@ -9,6 +9,8 @@ const auth = require("../middleWare/auth");
 dotenv.config();
 
 
+// User Registration Start
+
 router.post("/register", async (req, res) => {
 
     try{
@@ -76,8 +78,9 @@ catch(err){
 
 });
 
+// User Registration End
 
-//login validation
+//login validation Start
 
 
 router.post("/login",async(req,res)=>{
@@ -123,9 +126,9 @@ router.post("/login",async(req,res)=>{
 }
 
 });
+//login validation End
 
-
-// Delete account router
+// Delete account router Start
 
 router.delete("/deleteIt",auth,async(req,res)=>{
 
@@ -141,6 +144,10 @@ router.delete("/deleteIt",auth,async(req,res)=>{
     }
 
 });
+
+// Delete account router End
+
+// User Token validation Start
 
 
 router.post("/tokenIsValid",async(req,res)=>{
@@ -174,6 +181,9 @@ router.post("/tokenIsValid",async(req,res)=>{
 
 });
 
+// User Token validation End
+
+// User Get Request Start
 
 router.get("/",auth,async(req,res)=>{
 
@@ -183,6 +193,18 @@ router.get("/",auth,async(req,res)=>{
         id:user._id
     });
 });
+
+// User Get Request End
+
+
+// User Update request start
+
+router.put("/update", async (req,res)=>{
+
+});
+
+
+// User Update request End
 
 
 module.exports = router
