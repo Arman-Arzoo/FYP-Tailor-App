@@ -1,7 +1,6 @@
 {
   "name": "fyp-tailor-app",
   "version": "1.0.0",
-  "description": "",
   "main": "tailorApp.js",
   "dependencies": {
     "axios": "^0.20.0",
@@ -28,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/Arman-Arzoo/FYP-Tailor-App/issues"
   },
-  "homepage": "https://github.com/Arman-Arzoo/FYP-Tailor-App#readme"
+  "homepage": "https://github.com/Arman-Arzoo/FYP-Tailor-App#readme",
+  "description": ""
 }
