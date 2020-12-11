@@ -58,9 +58,10 @@ html, body{
   -moz-box-shadow: 0 3px 5px rgba(19, 85, 184, 0.3);
   box-shadow: 0 10px 5px rgba(5, 5, 5, 0.3);
   align-items: center;
+  position:fixed;
   top:0px;
   left:0px; 
-  position:fixed;
+  z-index:1;
 }
 
  .headerLogo  {
