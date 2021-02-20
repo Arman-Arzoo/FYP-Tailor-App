@@ -1,0 +1,599 @@
+
+
+
+/* default */
+* {
+  box-sizing: border-box;
+  font-family: ’Lato’, sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+a Link{
+  text-decoration: none;
+  
+}
+
+.text-center{
+  text-align: center;
+}
+
+/* testing body start*/
+
+
+/* testing body end */
+
+html, body{ 
+  /* min-height: 100vh; */
+  /* overflow: auto;
+  margin:0;
+padding:0;
+display:flex; */
+ /* justify-content:center;
+/*align-items:center; */
+/* min-height:100vh;  */
+}
+
+
+.main{
+  grid-area: main;
+
+}
+
+
+
+.container-form{
+  margin-bottom: 45px;
+  padding-top: 3rem;
+  padding: 2rem;
+  background-color: teal;
+  max-width: 500px;;
+  border-radius: 0.8rem;
+  margin: 0 auto;
+  box-shadow: 0px 15px 0px 0px yellow
+}
+
+/* Header styling */
+.header{
+  background-color:#004D40;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5rem;
+  -webkit-box-shadow: 0 3px 5px rgba(164, 199, 36, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(19, 85, 184, 0.3);
+  box-shadow: 0 10px 5px rgba(5, 5, 5, 0.3);
+  align-items: center;
+  position:fixed;
+  top:0px;
+  left:0px; 
+  z-index:1;
+}
+
+ .headerLogo  {
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 2.5rem;
+}
+
+.headerLogo a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.headerLogo a:hover{
+  color:turquoise;
+}
+
+.headerLink{
+  padding: 3rem;
+  font-size: 1.1rem;
+  
+  
+}
+
+.headerLink button{
+  color: white;
+  background-color:teal;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+}
+.headerLink .hhh{
+  color: white;
+  display: inline;
+  text-decoration: none;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+}
+
+
+.headerLink button:hover{
+  background-color: turquoise;
+}
+
+
+
+/* footer */
+footer {
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  height:50px;
+  position:fixed;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+
+
+
+
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+  flex: 1;       /* same as flex-grow: 1; */
+}
+
+/* home decoration */
+
+/* form  decoration */
+.login{
+  margin-top: 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.signUp{
+  margin-top: 5rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+}
+
+.Already-account a{
+  color: #f0f0f0;
+  text-decoration: none;
+
+}
+
+.Already-account a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+
+.error-notice{
+  margin:1rem o;
+  border: 1px solid red;
+  background-color: rosybrown;
+  padding:0.5rem;
+  border-radius: 8px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.error-notice button{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color: aliceblue;
+  background-color: red;
+
+}
+
+.form-container{
+  background-color: aqua;
+}
+
+.form label,
+.form input{
+  display: block;
+}
+.form input{
+  margin-bottom: 1rem;
+}
+
+.form label{
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+
+}
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"]{
+
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  border:1px solid #c2c2c2;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+
+
+}
+.form input:focus{
+  outline: none;
+  border: 1px solid  #50e4e9;
+  box-shadow: inset 0px 0px 5px rgba(38,142,228,0.5);
+}
+
+.form input[type="submit"]{
+ 
+  padding: 0.3rem 0.5rem;
+  background-color: green;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* media querry */
+@media screen and (max-width: 600px){
+  .headerLogo{
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .headerLink{
+    font-size: .8rem;
+    
+  }
+
+  .headerLink .hhh{
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  
+  .headerLink button{
+    padding: 0.2rem;  
+    margin: 0.3rem;
+  }
+  /* .Dash_uncomplete_order{
+    flex:1 1 23;
+  } */
+}
+@media screen and (max-width: 800px) and (min-width: 785px) 
+{
+  .Dash_uncomplete_order{
+    flex: 1 1 0;
+  }
+   .Dash_customer{
+    flex: 1 1 0;
+    /* padding:80px 70px; */
+    /* margin-left: 50rem; */
+  }
+  .Dash_recived_payment{
+    flex: 1 1 0;
+  }
+  .Dash_complete_order{
+    flex: 1 1 ;
+  }
+}
+
+
+/* @media screen and (max-width: 696px) and (min-width: 685px) 
+{
+  .Dash_uncomplete_order{
+    width:23%;
+  }
+   .Dash_customer{
+    flex: 1 1 23%;
+  }
+  .Dash_recived_payment{
+    flex: 1 1 23%;
+  }
+  .Dash_complete_order{
+    flex: 1 1 25%;
+  }
+} */
+
+/* @media screen and (max-width: 540px) and (min-width: 520px) 
+{
+  .Dash_uncomplete_order{
+  padding:0 1rem;
+  border-radius: 5px;
+  flex: 1 1 23%;
+  /* width:31%; */
+  /* margin-left: 10px;
+  }
+   .Dash_customer{
+    flex: 1 1 23%;
+  }
+  .Dash_recived_payment{
+    flex: 1 1 23%;
+  }
+  .Dash_complete_order{
+    flex: 1 1 23%;
+  } */
+/* } */ 
+
+ /* @media (min-width: 700px) and (max-width: 713px) {
+
+  .Dash_uncomplete_order{
+    width:23%;
+  }
+   .Dash_customer{
+    flex: 1 1 23%;
+  }
+  .Dash_recived_payment{
+    flex: 1 1 23%;
+  }
+  .Dash_complete_order{
+    flex: 1 1 25%;
+  }
+  
+ } */
+
+ /* @media (min-width: 520px) and (max-width: 540px) {
+  /* .Dash_four_container{
+    width: 20vw;
+  } */
+
+  /* .Dash_uncomplete_order{
+    flex: 1 1 23%;
+  }
+  .Dash_uncomplete_order{
+    flex: 1 1 23%;
+  }
+   .Dash_customer{
+    flex: 1 1 23%;
+  }
+  .Dash_complete_order{
+    flex: 1 1 23%;
+  } */
+ /* } */ 
+
+
+  /* ##################################
+             Start Dashbard Css  
+  #######################################*/
+  /* .Dashbord{
+    background-color: yellow;
+    
+  } */
+  /* .Dash_four_container{
+    background-color: darkblue;
+  } */
+ 
+  .Dash_row{
+    height: 90vh;
+   width: auto;
+     /* background-color: blue; */
+    
+  }
+  .Dash_four_container{
+    display:flex;
+    /* justify-content: space-around; */
+    flex-flow: wrap;
+    /* background-color:chartreuse; */
+    justify-content: center;
+    flex-direction: row;
+    
+  }
+  .Dash_customer{
+    background-color:turquoise;
+    padding:20px 50px;
+    border-radius: 5px;
+    flex: 1 1 10;
+    margin-left: 10px;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+.Dash_complete_order{
+  background-color:turquoise;
+  padding:20px 50px;
+  border-radius: 5px;
+  flex: 1 1 10;
+  margin-left: 10px;
+  margin-top: 1rem;
+}
+.Dash_uncomplete_order{
+  background-color:turquoise;
+  padding:20px 50px;
+  border-radius: 5px;
+  flex: 1 1 10;
+  margin-left: 10px;
+  margin-top: 1rem;
+}
+.Dash_recived_payment{
+  background-color:turquoise;
+  padding:20px 50px;
+  border-radius: 5px;
+  flex: 1 1 10;
+  margin-left: 10px;
+  margin-top: 1rem;
+}
+
+/* ##################################
+             start Dashbard icons
+  #######################################*/
+.Dash_icons{
+  font-size: 50px;
+  color: blue;
+}
+.Dash_icon_container{
+  /* margin:0;
+  padding:0;
+  width:31%;;
+  height: 30px; */
+  /* background-color: black; */
+  /* align-content: center;
+  align-items:center; */
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+  /* ##################################
+             End Dashbard Css  
+  #######################################*/
+ .mi-progress-active
+ {
+    /* display: block; */
+  height: 10%;
+  background: #037fff;
+  width: 0; 
+  
+
+  transition: all 1s cubic-bezier(.01,.57,.68,1.05) 0s;
+ }
+ /* span {
+  display: block;
+} */
+
+/* text on image */
+
+
+/* setting profile style start */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main_container .sidebar{
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  background: #004D40;
+  transition: all 0.3s ease;
+  box-shadow: 0px  0px 0px;
+}
+
+.main_container .sidebar .sidebar__inner{
+  position: relative;
+}
+
+.main_container .sidebar .profile{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 20px 0;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.main_container .sidebar .profile .img{
+  padding: 0 18px;
+}
+
+.main_container .sidebar .profile img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+
+.main_container .sidebar .profile p:first-child{
+  font-size: 14px;
+  color: #80CBC4;
+  margin-bottom: 3px;
+}
+
+.main_container .container{
+  margin-top: 60px;
+  width: calc(100% - 225px);
+  margin-left: 225px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.main_container .sidebar ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 30px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+  transition: all 0.3s ease;
+}
+
+.main_container .sidebar ul li a .icon{
+  margin-right: 15px;
+  font-size: 28px;
+}
+
+.main_container .sidebar ul li a span{
+  display: inline-block;
+}
+
+.main_container .sidebar ul li a:hover,
+.main_container .sidebar ul li a.active{
+  background: #fff;
+  color: #004D40;
+}
+
+
+
+
+.main_container .container .item{
+  background: #fff;
+  border: 1px solid #E0F2F1;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.item{
+  background: #fff;
+  border: 1px solid #E0F2F1;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* after adding active class */
+
+
+/*  */
+
+
+/* setting profile style End*/
+
+
+
+
+
